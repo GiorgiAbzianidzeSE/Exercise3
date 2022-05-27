@@ -32,7 +32,7 @@ public class Rectangle {
     }
 
     public int compareTo(Rectangle rectangle){
-        if(rectangle.areaCalculator() == this.areaCalculator()) return 0;
+        if(rectangle.areaCalculator() == this.areaCalculator() || rectangle == this) return 0;
         return rectangle.areaCalculator() > this.areaCalculator() ? 1 : -1;
     }
 }
